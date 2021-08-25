@@ -2,6 +2,7 @@ body{
     overflow: hidden;
     background-image: url('/sass/fondo.jpg');
     background-size: 100%;
+    background-position-y: -110px ;
 }
 
 .nav{
@@ -12,7 +13,6 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
     .logo-bmw{
         width: 40px;
         height: 40px;
@@ -115,7 +115,7 @@ body{
         margin-top: 320px;
         .carros{
             width: 250px;
-            margin-left: 10px;
+            margin-top: 50px;
             border-radius: 5px;
             border-style: solid;
             border-color: #E40C34;
