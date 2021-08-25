@@ -1,8 +1,165 @@
 body{
-    width: 100vw;
-    height: 100vw;
-    background-image: url('fondo.jpg');
+    overflow: hidden;
+    background-image: url('/sass/fondo.jpg');
+    background-size: 100%;
 }
-img{
-    width: 100px;
+
+.nav{
+    //background-color: lawngreen;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    .logo-bmw{
+        width: 40px;
+        height: 40px;
+        margin-left: 150px;
+    }
+    ul{
+        list-style-type: none;
+        height: 50px;
+        width: 580px;
+        //background-color: brown;
+        margin-right: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            display: inline;
+            padding-right: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            color: white;
+            border-radius: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+                #letter{
+                    height: 20px;
+                    border-radius: 5px;
+                }
+            }
+            Button{
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+                width: 180px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: #E40C34;
+                color: white;
+                border: 0;
+            }
+        }
+    }  
+}.info{
+    width: 100vw;
+    height: 100vh;
+    //background-color: yellow;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    .texto{
+        width: 90vh;
+        height: 250px;
+        margin-left: 10px;
+        margin-top: 10px;
+        //background-color: gray;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        .titulo{
+            width: 70%;
+            margin-left: 10%;
+            //background-color: green;
+            h1{
+                color: white;
+                word-spacing: 6px;
+                font-family: 'Hind Siliguri', sans-serif;
+            }.parrafo{
+                //background-color: yellowgreen;
+                p{
+                    color: white;
+                    word-spacing: 6px;
+                    font-size: 15px;
+                    font-family: 'Hind Siliguri', sans-serif;
+                }
+            }
+        }.order{
+            //background-color: yellow;
+            width: 60%;
+            #order-now{
+                width: 200px;
+                height: 40px;
+                border-radius: 12px;
+                background-color: #E40C34;
+                color: white;
+                border: 0;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+            }
+        }
+    }.angulos{
+        //background-color: wheat;
+        width: 600px;
+        height: 200px;
+        margin-left: 120px;
+        margin-top: 320px;
+        .carros{
+            width: 250px;
+            margin-left: 10px;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: #E40C34;
+        }
+    }
+
+}
+.carros:hover{
+    filter: contrast(50%) opacity(0.8);
+}
+
+ul{
+    li{
+        Button:hover{
+            background-color: #EF5454;
+        }
+    }
+}
+.info{
+    .texto{
+        .order{
+            #order-now:hover{
+                background-color: #EF5454;
+            }
+        }
+    }
+}
+.nav{
+    ul{
+        .nav-button:hover{
+            background-color: blueviolet;
+        }
+    }
+}
+
+.nav{
+    ul{
+        li{
+            a:hover{
+                color: crimson;
+                #letter:hover{
+                    background-color: white;
+                }
+            }
+        }
+    }
 }
